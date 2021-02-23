@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import Layout from './components/Layout/Layout'
+import { CartProvider } from './Context/CartContext'
+import Products from './components/Products/Products'
+import Order from './components/Order/Order'
+import Confirm from './components/Confirm/Confirm'
+import Success from './components/Success/Success'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <CartProvider>
+        <Layout>
+          <Switch>
+            <Route exact path="/">
+              <Products />
+            </Route>
+            <Route path="/order">
+              <Order />
+            </Route>
+            <Route path="/confirm">
+              <Confirm />
+            </Route>
+            <Route path="/success">
+              <Success />
+            </Route>
+          </Switch>
+        </Layout>
+      </CartProvider>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App

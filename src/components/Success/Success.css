@@ -1,0 +1,22 @@
+.success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 19px;
+
+}
+
+.success img {
+    height: 90px;
+    width: 90px;
+    margin-bottom: 30px;
+
+}
+
+.success p {
+    margin-bottom: 50px;
+}
+

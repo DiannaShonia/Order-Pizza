@@ -1,0 +1,17 @@
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35px 0 20px;
+}
+
+.logo img {
+    width: 34px;
+    height: 34px;
+}
+
+.heading {
+    font-weight:400;
+    font-size: 29px;
+}
+
