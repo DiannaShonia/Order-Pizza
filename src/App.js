@@ -4,11 +4,11 @@ import Products from './components/Products/Products'
 import Order from './components/Order/Order'
 import Confirm from './components/Confirm/Confirm'
 import Success from './components/Success/Success'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { HashRouter, Route, Switch } from 'react-router-dom'
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <CartProvider>
         <Layout>
           <Switch>
@@ -27,7 +27,7 @@ function App() {
           </Switch>
         </Layout>
       </CartProvider>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
