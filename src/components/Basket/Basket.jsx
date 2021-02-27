@@ -51,7 +51,10 @@ const Basket = () => {
               <div onClick={() => incrementQuantity(item)} className="plus">
                 +
               </div>
-              <div onClick={() => decrementQuantity(item)} className="minus">
+              <div
+                onClick={() => decrementQuantity(item)}
+                className={item.quantity === 1 ? 'minus disabled' : 'minus'}
+              >
                 -
               </div>
               <p onClick={() => deleteFromBasket(item)} className="del">
@@ -64,7 +67,7 @@ const Basket = () => {
       <div className="basket-row">
         <p>Total: {priceOfAllItems}$</p>
         <Link to="/confirm">
-          <Button text="Order" />
+          <Button text="Order" className="btn" />
         </Link>
       </div>
     </div>

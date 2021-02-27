@@ -1,14 +1,36 @@
 
-.btn {
+.btn, .btn-pink, .btn-order {
     width: 130px;
     height: 35px;
     border-radius: 10px;
     margin-left: 15px;
-    color: #fff;
-    background-color:#CFA1A7;
-    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background-color:#695991;
+    font-size: 15.5px;
     outline: none;
     cursor: pointer;
     border: 0;
     letter-spacing: 1px;
+}
+
+.btn-items:hover {
+    transition: 0.3s;
+    background-color: #b1a5cc;
+    color: #000;
+    
+}
+
+.btn-order:hover {
+    transition: 0.2s;
+    border: 1px solid rgb(210, 229, 250);
+}
+
+.btn:hover {
+    transition: 0.2s;
+    border: 1px solid #fff;
+}
+
+.btn-pink:hover {
+    transition: 0.2s;
+    border: 1px solid #fff;
 }

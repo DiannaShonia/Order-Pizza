@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import './Header.css'
 import Button from '../Button/Button'
 import { useLocation, Link } from 'react-router-dom'
@@ -6,8 +6,25 @@ import CartContext from '../../Context/CartContext'
 import Basket from '../Basket/Basket'
 
 const Header = () => {
-  const [cart, setCart] = useContext(CartContext)
-  const [onOrder, setOnOrder] = useState(false)
+  const [cart] = useContext(CartContext)
+  const [isOpen, setIsOpen] = useState(false)
+
+  // Closing on outside click
+  let basketRef = useRef()
+
+  useEffect(() => {
+    let handler = (event) => {
+      if (!basketRef.current.contains(event.target)) {
+        setIsOpen(false)
+      }
+    }
+
+    document.addEventListener('mousedown', handler)
+
+    return () => {
+      document.removeEventListener('mousedown', handler)
+    }
+  })
 
   const totalQuantity = cart.reduce(
     (total, product) => total + product.quantity,
@@ -30,7 +47,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="row">
+      <div ref={basketRef} className="row">
         {location.pathname != '/' ? (
           <div className="row1">
             <Link to={link} style={{ textDecoration: 'none' }}>
@@ -43,15 +60,19 @@ const Header = () => {
           <div className="row1"></div>
         )}
         <div className="row2">
-          <h2 onClick={() => setOnOrder(!onOrder)} className="cart">
+          <h2
+            ref={basketRef}
+            onClick={() => setIsOpen(!isOpen)}
+            className="cart"
+          >
             Cart ({totalQuantity}) |
           </h2>
           <h2 className="total">Total: {priceOfAllItems}$</h2>
           <Link to="/confirm">
-            <Button text="Order" />
+            <Button color="#c28c9c" className="btn-order" text="Order" />
           </Link>
         </div>
-        {onOrder ? <Basket /> : ''}
+        {isOpen ? <Basket /> : ''}
       </div>
     </header>
   )

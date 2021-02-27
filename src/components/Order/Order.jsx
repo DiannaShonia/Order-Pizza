@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom'
 import Button from '../Button/Button'
 import CartContext from '../../Context/CartContext'
 import { useContext, useState } from 'react'
-import { schema } from '../Validations/Order-validation'
+import * as yup from 'yup'
 
 const Order = () => {
   const [cart] = useContext(CartContext)
@@ -17,6 +17,12 @@ const Order = () => {
   )
 
   // form validation
+  const schema = yup.object().shape({
+    fname: yup.string(),
+    lname: yup.string(),
+    address: yup.string().required(),
+    phone: yup.number(),
+  })
 
   const orderData = async (event) => {
     event.preventDefault()
@@ -50,7 +56,7 @@ const Order = () => {
           </div>
           <div className="confirm-row">
             <p>Total: {priceOfAllItems}$</p>
-            <Button type="submit" color="#7d72b5" text="Continue" />
+            <Button type="submit" className="btn" text="Continue" />
           </div>
         </form>
       </div>

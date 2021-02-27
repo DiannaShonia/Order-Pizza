@@ -11,7 +11,11 @@ const Product = ({ image, title, description, price, onClick }) => {
       <p className="description">{description}</p>
       <div className="price-row">
         <h3 className="price">{price}$</h3>
-        <Button onClick={onClick} color="#7d72b5" text="Add To Cart" />
+        <Button
+          onClick={onClick}
+          text="Add To Cart"
+          className="btn btn-items"
+        />
       </div>
     </div>
   )

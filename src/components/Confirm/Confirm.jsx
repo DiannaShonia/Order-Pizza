@@ -29,7 +29,11 @@ const Confirm = () => {
               </p>
               <div className="block">
                 <p>{item.quantity * item.price}$</p>
-                <Button onClick={() => deleteProduct(item)} text="Remove" />
+                <Button
+                  onClick={() => deleteProduct(item)}
+                  text="Remove"
+                  className="btn"
+                />
               </div>
             </li>
           ))}
@@ -37,7 +41,7 @@ const Confirm = () => {
         <div className="confirm-row">
           <p>Total: {priceOfAllItems}$</p>
           <Link to="/order">
-            <Button color="#7d72b5" text="Continue" />
+            <Button color="#c28c9c" text="Continue" className="btn-pink" />
           </Link>
         </div>
       </div>

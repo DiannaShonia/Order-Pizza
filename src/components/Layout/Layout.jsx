@@ -1,8 +1,7 @@
 import Logo from '../Logo/Logo'
 import Header from '../Header/Header'
 import './Layout.css'
-import CartContext from '../../Context/CartContext'
-import { useContext } from 'react'
+import { useState } from 'react'
 
 const Layout = ({ children }) => {
   return (
