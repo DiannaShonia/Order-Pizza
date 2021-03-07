@@ -1,5 +1,5 @@
 <p align="center"><img src="https://i.imgur.com/Oxm29Xa.png"></p>
-<p align="center" width="17px">Order-Pizza</p>
+<h3 align="center" width="17px">Order-Pizza</h3>
 
 # About
 Order-Pizza is shopping cart site build in ReactJS. For demo link visit here: https://diannashonia.github.io/Order-Pizza/#/
