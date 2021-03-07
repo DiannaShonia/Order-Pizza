@@ -1,5 +1,5 @@
-###  Order-Pizza
-![Order-Pizza](https://i.imgur.com/Oxm29Xa.png "Order-Pizza")
+<p align="center"><img src="https://i.imgur.com/Oxm29Xa.png"></p>
+<p align="center">Order-Pizza</p>
 
 # About
 Order-Pizza is shopping cart site build in ReactJS. For demo link visit here: https://diannashonia.github.io/Order-Pizza/#/
