@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Order-Pizza/static/css/main.1ff99042.chunk.css",
-    "main.js": "/Order-Pizza/static/js/main.2638366c.chunk.js",
-    "main.js.map": "/Order-Pizza/static/js/main.2638366c.chunk.js.map",
-    "runtime-main.js": "/Order-Pizza/static/js/runtime-main.08cd6156.js",
-    "runtime-main.js.map": "/Order-Pizza/static/js/runtime-main.08cd6156.js.map",
-    "static/js/2.6365ccc9.chunk.js": "/Order-Pizza/static/js/2.6365ccc9.chunk.js",
-    "static/js/2.6365ccc9.chunk.js.map": "/Order-Pizza/static/js/2.6365ccc9.chunk.js.map",
-    "static/js/3.476881d0.chunk.js": "/Order-Pizza/static/js/3.476881d0.chunk.js",
-    "static/js/3.476881d0.chunk.js.map": "/Order-Pizza/static/js/3.476881d0.chunk.js.map",
+    "main.css": "/Order-Pizza/static/css/main.0f261e35.chunk.css",
+    "main.js": "/Order-Pizza/static/js/main.7c32e44d.chunk.js",
+    "main.js.map": "/Order-Pizza/static/js/main.7c32e44d.chunk.js.map",
+    "runtime-main.js": "/Order-Pizza/static/js/runtime-main.f9437fc9.js",
+    "runtime-main.js.map": "/Order-Pizza/static/js/runtime-main.f9437fc9.js.map",
+    "static/js/2.3d62846c.chunk.js": "/Order-Pizza/static/js/2.3d62846c.chunk.js",
+    "static/js/2.3d62846c.chunk.js.map": "/Order-Pizza/static/js/2.3d62846c.chunk.js.map",
+    "static/js/3.03341640.chunk.js": "/Order-Pizza/static/js/3.03341640.chunk.js",
+    "static/js/3.03341640.chunk.js.map": "/Order-Pizza/static/js/3.03341640.chunk.js.map",
     "index.html": "/Order-Pizza/index.html",
-    "static/css/main.1ff99042.chunk.css.map": "/Order-Pizza/static/css/main.1ff99042.chunk.css.map",
-    "static/js/2.6365ccc9.chunk.js.LICENSE.txt": "/Order-Pizza/static/js/2.6365ccc9.chunk.js.LICENSE.txt",
+    "static/css/main.0f261e35.chunk.css.map": "/Order-Pizza/static/css/main.0f261e35.chunk.css.map",
+    "static/js/2.3d62846c.chunk.js.LICENSE.txt": "/Order-Pizza/static/js/2.3d62846c.chunk.js.LICENSE.txt",
     "static/media/pizza.ac5522f0.png": "/Order-Pizza/static/media/pizza.ac5522f0.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.08cd6156.js",
-    "static/js/2.6365ccc9.chunk.js",
-    "static/css/main.1ff99042.chunk.css",
-    "static/js/main.2638366c.chunk.js"
+    "static/js/runtime-main.f9437fc9.js",
+    "static/js/2.3d62846c.chunk.js",
+    "static/css/main.0f261e35.chunk.css",
+    "static/js/main.7c32e44d.chunk.js"
   ]
 }
